@@ -1,0 +1,137 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #f7f8fa, #dde2e7);
+    color: #333;
+}
+
+/* Universal Container Styling */
+body > div {
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Headings */
+h1, h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+h1 {
+    color: #e74c3c; /* For Error Page */
+}
+
+h2 {
+    color: #3498db; /* For Login/Sign-Up */
+}
+
+/* Paragraphs and Error Messages */
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+    color: #7f8c8d;
+}
+
+p + p {
+    color: #e74c3c; /* Error Messages */
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #2980b9;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #3498db;
+}
+
+/* Forms */
+form {
+    margin-top: 1rem;
+}
+
+form > div {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    background: #ecf0f1;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Error Page Specific */
+body > div > a {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background: #e74c3c;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+body > div > a:hover {
+    background: #c0392b;
+}
